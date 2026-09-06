@@ -1,0 +1,47 @@
+{
+  "name": "meta-wearables-ops",
+  "description": "Meta smart-glasses engineering — Wearables Device Access SDK integration on iOS and Android, camera, display, sensors, transport reliability, on-device compliance, and device-backed release proof.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Curtis Blanton",
+    "email": "public@shotcowboystyle.com",
+    "url": "https://shotcowboystyle.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/shotcowboystyle/meta-wearables-ops-plugin",
+  "commands": [],
+  "skills": [
+    "./skills/meta-dat-android-api-atlas/",
+    "./skills/meta-dat-android-integration/",
+    "./skills/meta-dat-api-atlas/",
+    "./skills/meta-dat-camera-audio/",
+    "./skills/meta-dat-display/",
+    "./skills/meta-dat-ios-integration/",
+    "./skills/meta-wearables-agentic-team/",
+    "./skills/meta-wearables-app-architecture/",
+    "./skills/meta-wearables-debugging-observability/",
+    "./skills/meta-wearables-developer-operations/",
+    "./skills/meta-wearables-device-compatibility/",
+    "./skills/meta-wearables-device-proof/",
+    "./skills/meta-wearables-full-sdk-audit/",
+    "./skills/meta-wearables-implementation-recipes/",
+    "./skills/meta-wearables-input-sensors/",
+    "./skills/meta-wearables-on-device-compliance/",
+    "./skills/meta-wearables-operational-readiness/",
+    "./skills/meta-wearables-privacy-publishing/",
+    "./skills/meta-wearables-route-planner/",
+    "./skills/meta-wearables-security-attestation/",
+    "./skills/meta-wearables-source-refresh/",
+    "./skills/meta-wearables-transport-reliability/",
+    "./skills/meta-wearables-web-apps/"
+  ],
+  "keywords": [
+    "meta-wearables",
+    "wearables-device-access",
+    "smart-glasses",
+    "android",
+    "ios",
+    "sdk-integration",
+    "device-proof"
+  ]
+}
