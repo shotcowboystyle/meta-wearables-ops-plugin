@@ -19,8 +19,8 @@ Treat camera and audio as separate capability contracts with explicit ownership,
 - Read [transport, audio, and runtime reliability](../../knowledge-base/70-meta-wearables/22-transport-audio-and-runtime-reliability.md) for Wi-Fi/local-network parity, Bluetooth/link state, HFP/A2DP route evidence, queue policy, thermal behavior, and bounded recovery.
 - Refresh the official [DAT iOS camera/streaming skill](https://github.com/facebook/meta-wearables-dat-ios/tree/main/plugins/mwdat-ios/skills/camera-streaming), [debugging skill](https://github.com/facebook/meta-wearables-dat-ios/tree/main/plugins/mwdat-ios/skills/debugging), and [AVFoundation](https://developer.apple.com/documentation/avfoundation) / [AVAudioSession](https://developer.apple.com/documentation/avfaudio/avaudiosession) documentation.
 - Verify the exact installed symbols and media types against the selected tag. Current 0.9.0 notes use `DeviceSession.addCamera(config:) -> Camera`, `Camera.stream`, `Camera.stop()`, and camera state; do not revive removed `addStream(config:)` examples. Also check `StreamError.hingesClosed`, current photo-failure cases, and the background-camera sample behavior.
-- Start from the [source-aligned iOS camera coordinator](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-camera-starter/MetaWearablesCameraStarter.swift) or [Android camera coordinator](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-camera-starter/MetaWearablesAndroidCameraStarter.kt) when scaffolding a concrete route. They are adapter seeds, not physical camera/audio proof.
-- Use the [iOS MockDevice fixture](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-starter/MetaWearablesMockDeviceStarter.swift) or [Android MockDevice fixture](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-mockdevice-starter/MetaWearablesAndroidMockDeviceStarter.kt) to make denied permission, file-feed, capture, fold/doff, tap, cancellation, and teardown cases deterministic before requesting camera or audio hardware evidence.
+- Start from the [source-aligned iOS camera coordinator](../meta-wearables-implementation-recipes/assets/meta-wearables-ios-camera-starter/MetaWearablesCameraStarter.swift) or [Android camera coordinator](../meta-wearables-implementation-recipes/assets/meta-wearables-android-camera-starter/MetaWearablesAndroidCameraStarter.kt) when scaffolding a concrete route. They are adapter seeds, not physical camera/audio proof.
+- Use the [iOS MockDevice fixture](../meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-starter/MetaWearablesMockDeviceStarter.swift) or [Android MockDevice fixture](../meta-wearables-implementation-recipes/assets/meta-wearables-android-mockdevice-starter/MetaWearablesAndroidMockDeviceStarter.kt) to make denied permission, file-feed, capture, fold/doff, tap, cancellation, and teardown cases deterministic before requesting camera or audio hardware evidence.
 
 ## Camera workflow
 
@@ -66,14 +66,14 @@ Treat media as two independent slices: bounded camera/photo and an explicit audi
 
 ## Related routes
 
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Privacy and publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Transport/reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Display](../meta-dat-display/SKILL.md)
+- [Privacy and publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Transport/reliability](../meta-wearables-transport-reliability/SKILL.md)
 - [Apple media and ML routes](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-media-ml-and-inputs/SKILL.md)
 
 ## Sources

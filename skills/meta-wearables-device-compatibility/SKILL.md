@@ -15,8 +15,8 @@ for a particular product, firmware, companion version, and release channel.
 ## Read before acting
 
 - Read [version-dependency and device-compatibility evidence](../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md)
-  and its [compatibility contract](../../.agent/skills/meta-wearables-device-compatibility/references/compatibility-contract.md).
-- Use the [compatibility evidence-packet template](../../.agent/skills/meta-wearables-device-compatibility/references/compatibility-evidence-packet.yaml)
+  and its [compatibility contract](references/compatibility-contract.md).
+- Use the [compatibility evidence-packet template](references/compatibility-evidence-packet.yaml)
   and run `python3 scripts/validate_compatibility_packet.py <packet>` before
   treating a compatibility handoff as ready for implementation or physical
   testing.
@@ -96,13 +96,13 @@ Normalize one tuple—product label, runtime `DeviceType`, firmware, companion/D
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Full SDK audit](../../.agent/skills/meta-wearables-full-sdk-audit/SKILL.md)
-- [Route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
-- [Security and attestation](../../.agent/skills/meta-wearables-security-attestation/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Full SDK audit](../meta-wearables-full-sdk-audit/SKILL.md)
+- [Route planner](../meta-wearables-route-planner/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Source refresh](../meta-wearables-source-refresh/SKILL.md)
+- [Security and attestation](../meta-wearables-security-attestation/SKILL.md)
 
 ## Sources
 

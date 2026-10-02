@@ -16,7 +16,7 @@ Turn a wearable idea into a verified platform route before package imports, UI w
 - Read the [device-generation and runtime-support matrix](../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md) when product wording includes Gen 2, Gen 3, Meta Glasses, Display, or an SDK alias.
 - Read the [version-dependency and device-compatibility route](../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md) when wording includes firmware, companion/DAT-app version, support matrix, or compatibility failure.
 - Read the [full SDK capability and source-conflict matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md) when the request says “full,” “regular SDK,” “all capabilities,” or parity.
-- Load the portable [surface manifest](../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml) and resolve its `terminology_contract` before selecting a route; preserve ambiguous or unresolved status instead of translating user labels into SDK symbols.
+- Load the portable [surface manifest](../meta-wearables-full-sdk-audit/references/surface-manifest.yaml) and resolve its `terminology_contract` before selecting a route; preserve ambiguous or unresolved status instead of translating user labels into SDK symbols.
 - Read the [DAT Android API surface atlas](../../knowledge-base/70-meta-wearables/20-dat-android-api-surface-atlas.md) when Android/Kotlin/Java symbols, Maven coordinates, or 0.9 migration behavior is in scope.
 - Read [Developer Center project and release operations](../../knowledge-base/70-meta-wearables/21-developer-center-project-and-release-operations.md) when account/team/project identity, tester access, versions, release channels, or telemetry is part of the route.
 - Read [transport, audio, and runtime reliability](../../knowledge-base/70-meta-wearables/22-transport-audio-and-runtime-reliability.md) when the capability or failure involves Bluetooth, Wi-Fi/local network, HFP/A2DP, latency, backpressure, thermal/power, or link recovery.
@@ -96,18 +96,18 @@ Return:
 
 ## Related routes
 
-- [Meta Wearables agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT camera and audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [Transport and runtime reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [DAT Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [on-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [security and attestation](../../.agent/skills/meta-wearables-security-attestation/SKILL.md)
+- [Meta Wearables agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT camera and audio](../meta-dat-camera-audio/SKILL.md)
+- [Transport and runtime reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [DAT Display](../meta-dat-display/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [device proof](../meta-wearables-device-proof/SKILL.md)
+- [on-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [security and attestation](../meta-wearables-security-attestation/SKILL.md)
 
 ## Sources
 

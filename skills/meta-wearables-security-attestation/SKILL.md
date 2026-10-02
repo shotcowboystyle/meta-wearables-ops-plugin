@@ -15,9 +15,9 @@ certification and does not grant access to a project or account.
 
 ## Read before acting
 
-- Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md), its [contract reference](../../.agent/skills/meta-wearables-security-attestation/references/security-attestation-contract.md), and the [evidence packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md).
+- Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md), its [contract reference](references/security-attestation-contract.md), and the [evidence packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md).
 - Read [registration and configuration](../../knowledge-base/70-meta-wearables/02-registration-permissions-and-configuration.md), [Developer Center operations](../../knowledge-base/70-meta-wearables/21-developer-center-project-and-release-operations.md), [privacy/publishing](../../knowledge-base/70-meta-wearables/08-privacy-publishing-and-release.md), and [on-device compliance](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md).
-- Read the selected [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md), [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md), [application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md), and [operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md) roles when the identity or callback is part of a build or recovery.
+- Read the selected [DAT iOS integration](../meta-dat-ios-integration/SKILL.md), [DAT Android integration](../meta-dat-android-integration/SKILL.md), [application architecture](../meta-wearables-app-architecture/SKILL.md), and [operational readiness](../meta-wearables-operational-readiness/SKILL.md) roles when the identity or callback is part of a build or recovery.
 - Refresh the official [full reference](https://wearables.developer.meta.com/llms.txt?full=true), [DAT iOS getting started](https://github.com/facebook/meta-wearables-dat-ios/blob/main/plugins/mwdat-ios/skills/getting-started/SKILL.md), [DAT iOS permissions/registration](https://github.com/facebook/meta-wearables-dat-ios/blob/main/plugins/mwdat-ios/skills/permissions-registration/SKILL.md), [DAT Android getting started](https://github.com/facebook/meta-wearables-dat-android/blob/main/plugins/mwdat-android/skills/getting-started/SKILL.md), [DAT Android permissions/registration](https://github.com/facebook/meta-wearables-dat-android/blob/main/plugins/mwdat-android/skills/permissions-registration/SKILL.md), [manage projects](https://wearables.developer.meta.com/docs/develop/dat/manage-projects/), and [release channels](https://wearables.developer.meta.com/docs/set-up-release-channels/).
 - Recheck Apple's [ExternalAccessory](https://developer.apple.com/documentation/externalaccessory), [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files), [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/), and the target's actual `Info.plist`, entitlements, privacy manifest, signing, and build settings.
 
@@ -153,15 +153,15 @@ Return:
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Developer Center operations](../../.agent/skills/meta-wearables-developer-operations/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Privacy and publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Developer Center operations](../meta-wearables-developer-operations/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Privacy and publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
 
 ## Sources
 

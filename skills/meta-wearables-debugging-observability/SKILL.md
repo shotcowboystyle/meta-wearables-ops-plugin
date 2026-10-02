@@ -124,13 +124,13 @@ Return:
 
 ## Related roles
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Transport reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Route planner](../meta-wearables-route-planner/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Transport reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
 
 ## Sources
 

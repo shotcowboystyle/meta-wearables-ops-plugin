@@ -62,7 +62,7 @@ diagnostic handoffs.
 
 ## Machine-checked evidence packet
 
-Start from the [compatibility evidence-packet template](../../../.agent/skills/meta-wearables-device-compatibility/references/compatibility-evidence-packet.yaml)
+Start from the [compatibility evidence-packet template](compatibility-evidence-packet.yaml)
 and validate the completed or draft handoff:
 
 ```bash
@@ -83,4 +83,4 @@ physical/release evidence.
 - [Version-dependency evidence route](../../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md)
 - [Device-generation matrix](../../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md)
 - [Evidence packet](../../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md)
-- [Compatibility evidence-packet template](../../../.agent/skills/meta-wearables-device-compatibility/references/compatibility-evidence-packet.yaml)
+- [Compatibility evidence-packet template](compatibility-evidence-packet.yaml)

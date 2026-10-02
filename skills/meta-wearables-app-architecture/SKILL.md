@@ -16,8 +16,8 @@ limited, or on a different model.
 ## Read before acting
 
 - Read the [application architecture and platform-boundaries route](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md), [route-selection page](../../knowledge-base/70-meta-wearables/00-platform-and-route-selection.md), [full-SDK matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md), and [on-device contract](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md).
-- Load the [vertical-slice playbooks](../../.agent/skills/meta-wearables-app-architecture/references/vertical-slice-playbooks.md) after filtering the source-pinned API register; choose the smallest playbook that matches the outcome and carry its row IDs, state machine, fallback, and proof ladder into the handoff.
-- Load the [implementation recipes](../../.agent/skills/meta-wearables-implementation-recipes/SKILL.md) when the request needs Swift, Kotlin/Java, or Web App scaffolding; preserve compile-gated signatures and adapter boundaries.
+- Load the [vertical-slice playbooks](references/vertical-slice-playbooks.md) after filtering the source-pinned API register; choose the smallest playbook that matches the outcome and carry its row IDs, state machine, fallback, and proof ladder into the handoff.
+- Load the [implementation recipes](../meta-wearables-implementation-recipes/SKILL.md) when the request needs Swift, Kotlin/Java, or Web App scaffolding; preserve compile-gated signatures and adapter boundaries.
 - Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md) before placing identity, callback, credential, attestation, Web App origin, or processing-location state in shared product architecture.
 - Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) before sharing Display, Web App, or phone-sensor events; preserve source, epoch, teardown, and fallback boundaries.
 - Read the [DAT iOS foundations](../../knowledge-base/70-meta-wearables/01-dat-ios-sdk-foundations.md), [Android parity route](../../knowledge-base/70-meta-wearables/14-dat-android-parity-and-boundaries.md), [device/release packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md), and [operational recovery route](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md).
@@ -103,20 +103,20 @@ Draw four boxes before writing adapters: shared domain, platform adapter, surfac
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [Full-SDK audit](../../.agent/skills/meta-wearables-full-sdk-audit/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Camera/audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [Native Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Vertical-slice playbooks](../../.agent/skills/meta-wearables-app-architecture/references/vertical-slice-playbooks.md)
-- [Implementation recipes](../../.agent/skills/meta-wearables-implementation-recipes/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Route planner](../meta-wearables-route-planner/SKILL.md)
+- [Full-SDK audit](../meta-wearables-full-sdk-audit/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Camera/audio](../meta-dat-camera-audio/SKILL.md)
+- [Native Display](../meta-dat-display/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Vertical-slice playbooks](references/vertical-slice-playbooks.md)
+- [Implementation recipes](../meta-wearables-implementation-recipes/SKILL.md)
 
 ## Sources
 
@@ -127,4 +127,4 @@ Draw four boxes before writing adapters: shared domain, platform adapter, surfac
 - [DAT-filtered full reference](https://wearables.developer.meta.com/llms.txt?full=true&product=dat)
 - [DAT iOS changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md)
 - [DAT Android changelog](https://github.com/facebook/meta-wearables-dat-android/blob/main/CHANGELOG.md)
-- [Portable vertical-slice playbooks](../../.agent/skills/meta-wearables-app-architecture/references/vertical-slice-playbooks.md)
+- [Portable vertical-slice playbooks](references/vertical-slice-playbooks.md)

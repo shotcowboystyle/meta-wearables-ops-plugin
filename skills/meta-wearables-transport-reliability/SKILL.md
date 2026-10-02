@@ -15,7 +15,7 @@ physical evidence as separate claims.
 ## Read before acting
 
 - Read the [transport, audio, and reliability route](../../knowledge-base/70-meta-wearables/22-transport-audio-and-runtime-reliability.md), [session/camera/audio route](../../knowledge-base/70-meta-wearables/03-device-session-camera-and-audio.md), [Android parity route](../../knowledge-base/70-meta-wearables/14-dat-android-parity-and-boundaries.md), and [operational-readiness route](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md).
-- Read the [on-device compliance contract](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md), [application architecture route](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md), [device-proof packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md), and [transport contract reference](../../.agent/skills/meta-wearables-transport-reliability/references/transport-contract.md).
+- Read the [on-device compliance contract](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md), [application architecture route](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md), [device-proof packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md), and [transport contract reference](references/transport-contract.md).
 - Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) when input/sensor event timing, stale callbacks, listener teardown, sampling, or physical gesture recovery depends on transport state.
 - Read the [debugging and observability route](../../knowledge-base/70-meta-wearables/23-debugging-observability-and-diagnostic-evidence.md) when a transport or audio symptom needs first-failure events, app-visible readiness, or a redacted handoff.
 - Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md) when transport setup includes project identity, callback configuration, package access, signed release, or processing-location evidence.
@@ -83,14 +83,14 @@ Choose one bounded operation and write its states: start -> active -> degraded o
 
 ## Related roles
 
-- [DAT camera and audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Android API atlas](../../.agent/skills/meta-dat-android-api-atlas/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
+- [DAT camera and audio](../meta-dat-camera-audio/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Android API atlas](../meta-dat-android-api-atlas/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
 
 ## Sources
 

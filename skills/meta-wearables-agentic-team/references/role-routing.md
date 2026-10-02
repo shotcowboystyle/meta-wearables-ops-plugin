@@ -3,7 +3,7 @@
 Use the narrowest set of roles that can prove the requested behavior. The roles are complementary; they are not permission to invent unsupported APIs.
 
 The exact upstream role-to-local-owner contract lives in
-[team-manifest.yaml](../../../.agent/skills/meta-wearables-agentic-team/references/team-manifest.yaml); validate it before delegating a
+[team-manifest.yaml](team-manifest.yaml); validate it before delegating a
 full-SDK or cross-platform request.
 
 | Request signal | Primary role | Required handoff | Evidence that remains separate |
@@ -52,7 +52,7 @@ If a required field is unknown, label it `to-verify`; do not silently substitute
 
 ## Machine-readable routing receipt
 
-Run the [route receipt runner](../../../.agent/skills/meta-wearables-agentic-team/scripts/route_capability.py) after selecting a
+Run the [route receipt runner](../scripts/route_capability.py) after selecting a
 capability and before writing a target handoff:
 
 ```sh
@@ -71,7 +71,7 @@ does not resolve credentials or promote any evidence level.
 
 ## Static fixture-suite receipt
 
-Run the [static fixture suite](../../../.agent/skills/meta-wearables-agentic-team/scripts/run_static_fixture_suite.py) after a
+Run the [static fixture suite](../scripts/run_static_fixture_suite.py) after a
 recipe or fixture change:
 
 ```sh

@@ -21,9 +21,9 @@ Build the smallest native iOS adapter around the official DAT package. Keep regi
 - Read the [application architecture and platform-boundaries route](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md) before placing the adapter behind shared product state or a phone fallback.
 - Pin or otherwise record the selected official [DAT iOS repository](https://github.com/facebook/meta-wearables-dat-ios) tag/commit. On the 2026-08-22 refresh, `main` was `225f64ff1617e7acc8c407bb8d3ee132f7263d00` while the 0.9.0 tag was `9b1b83d791dfebff7afd452e924a256819094b64`; use the tag for reproducible package resolution and validate its migration notes in the [changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md) against the actual package graph.
 - Read the official [iOS integration](https://wearables.developer.meta.com/docs/build-integration-ios), [permissions/registration](https://github.com/facebook/meta-wearables-dat-ios/tree/main/plugins/mwdat-ios/skills/permissions-registration), and [session lifecycle](https://github.com/facebook/meta-wearables-dat-ios/tree/main/plugins/mwdat-ios/skills/session-lifecycle) guidance.
-- For camera/photo implementation, begin with the [source-aligned iOS camera starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-camera-starter/MetaWearablesCameraStarter.swift) after validating the selected SPM products and target privacy configuration.
-- For deterministic fixture work, begin with the [source-aligned iOS MockDevice starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-starter/MetaWearablesMockDeviceStarter.swift) after linking the selected `MWDATMockDevice` product; keep its mock evidence separate from physical-device evidence.
-- For XCUITest-process control, use the [source-aligned iOS MockDevice test-client starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-test-client-starter/MetaWearablesMockDeviceTestClientStarter.swift) with the app-owned test-server setup; keep `MWDATMockDeviceTestClient` test-only and separate from runtime app capability code.
+- For camera/photo implementation, begin with the [source-aligned iOS camera starter](../meta-wearables-implementation-recipes/assets/meta-wearables-ios-camera-starter/MetaWearablesCameraStarter.swift) after validating the selected SPM products and target privacy configuration.
+- For deterministic fixture work, begin with the [source-aligned iOS MockDevice starter](../meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-starter/MetaWearablesMockDeviceStarter.swift) after linking the selected `MWDATMockDevice` product; keep its mock evidence separate from physical-device evidence.
+- For XCUITest-process control, use the [source-aligned iOS MockDevice test-client starter](../meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-test-client-starter/MetaWearablesMockDeviceTestClientStarter.swift) with the app-owned test-server setup; keep `MWDATMockDeviceTestClient` test-only and separate from runtime app capability code.
 
 ## Integration workflow
 
@@ -77,13 +77,13 @@ Return:
 
 ## Related routes
 
-- [Meta route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [Camera and audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
+- [Meta route planner](../meta-wearables-route-planner/SKILL.md)
+- [Camera and audio](../meta-dat-camera-audio/SKILL.md)
+- [Display](../meta-dat-display/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
 - [Apple system surfaces](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-system-surfaces-and-background/SKILL.md)
 - [Apple privacy and security](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-privacy-performance-release-proof/SKILL.md)
 

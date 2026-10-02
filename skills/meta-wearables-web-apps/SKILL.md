@@ -12,19 +12,19 @@ Use the official Web App surface when the experience should be delivered to the 
 ## Read before acting
 
 - Inspect the actual Web App source, build toolchain, URL/deployment target, assets, state model, and any companion phone integration.
-- Read [Web Apps, Display, and input](../../knowledge-base/70-meta-wearables/06-web-apps-display-and-input.md) and the local [Web App display contract](../../.agent/skills/meta-wearables-web-apps/references/display-contract.md).
-- Load the Web Apps `api_surface.rows` from the portable [source-pinned manifest](../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
+- Read [Web Apps, Display, and input](../../knowledge-base/70-meta-wearables/06-web-apps-display-and-input.md) and the local [Web App display contract](references/display-contract.md).
+- Load the Web Apps `api_surface.rows` from the portable [source-pinned manifest](../meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
   and preserve each runtime/source-conflict row independently; toolkit guidance
   is not physical glasses proof.
-- Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) and the local [input/sensor contract](../../.agent/skills/meta-wearables-input-sensors/references/input-sensor-contract.md) when the feature uses D-pad/EMG/temple input, motion, orientation, geolocation, or source-conflicted Web App features.
+- Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) and the local [input/sensor contract](../meta-wearables-input-sensors/references/input-sensor-contract.md) when the feature uses D-pad/EMG/temple input, motion, orientation, geolocation, or source-conflicted Web App features.
 - Read the [on-device compliance and runtime contract](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md) for public-data boundaries, processing location, network/storage behavior, and typed fallback.
 - Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md) for HTTPS origin/deployment boundaries, client-visible assets, server-side credentials, Meta AI add/launch state, and any claim that a Web App has native DAT attestation or local processing.
 - Read the [operational readiness and recovery route](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md) for companion, firmware, public HTTPS launch, Display provisioning, release-channel, and recovery gates.
 - Read the [application architecture and platform-boundaries route](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md) when a Web App shares product state, data, or fallback behavior with a native companion.
-- Read the portable [toolkit skill map](../../.agent/skills/meta-wearables-web-apps/references/toolkit-skill-map.md) when the request asks for scaffolding, text entry, gestures, sensors, offline behavior, API connection, staging, or publishing.
-- For a new reducer-first scaffold, copy the [dependency-free Web App starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-web-starter) and run `node --test ../meta-wearables-implementation-recipes/assets/meta-wearables-web-starter/test/display-state.test.mjs` from this package directory before binding the selected toolkit revision.
+- Read the portable [toolkit skill map](references/toolkit-skill-map.md) when the request asks for scaffolding, text entry, gestures, sensors, offline behavior, API connection, staging, or publishing.
+- For a new reducer-first scaffold, copy the [dependency-free Web App starter](../meta-wearables-implementation-recipes/assets/meta-wearables-web-starter) and run `node --test ../meta-wearables-implementation-recipes/assets/meta-wearables-web-starter/test/display-state.test.mjs` from this package directory before binding the selected toolkit revision.
 - Read the official [Meta Wearables Web App repository](https://github.com/facebook/meta-wearables-webapp), [agent guidance](https://github.com/facebook/meta-wearables-webapp/blob/main/AGENTS.md), [Display guidelines](https://github.com/facebook/meta-wearables-webapp/blob/main/plugins/meta-wearables-webapp/references/display-guidelines.md), and [performance guidelines](https://github.com/facebook/meta-wearables-webapp/blob/main/plugins/meta-wearables-webapp/references/performance-guidelines.md).
-- Run the bundled [Web App preflight receipt runner](../../.agent/skills/meta-wearables-web-apps/scripts/run_webapp_preflight.py) against the actual entrypoint before calling a local HTML/JS surface a Meta delivery target. Use `--require-meta-markers` and, when a public URL is available, `--origin <https-url> --check-origin --require-https-origin`; this keeps hosted HTTPS evidence separate from browser-simulator and physical Display evidence.
+- Run the bundled [Web App preflight receipt runner](scripts/run_webapp_preflight.py) against the actual entrypoint before calling a local HTML/JS surface a Meta delivery target. Use `--require-meta-markers` and, when a public URL is available, `--origin <https-url> --check-origin --require-https-origin`; this keeps hosted HTTPS evidence separate from browser-simulator and physical Display evidence.
 - Compare the toolkit `main` guidance with the current [full Developer Center reference](https://wearables.developer.meta.com/llms.txt?full=true). The reviewed sources conflict about text composition, offline support, back navigation, sensors, and extended gestures; carry those features as `source-conflict`/`to-verify` until the exact runtime closes the gap.
 - Refresh the current [Web Apps documentation](https://wearables.developer.meta.com/docs/develop/webapps) and record any login/access limitation rather than treating an inaccessible page as proof.
 
@@ -88,16 +88,16 @@ the runtime result and current authenticated docs agree.
 
 ## Related routes
 
-- [Meta route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [DAT Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Privacy and publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Web App preflight receipt runner](../../.agent/skills/meta-wearables-web-apps/scripts/run_webapp_preflight.py)
+- [Meta route planner](../meta-wearables-route-planner/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [DAT Display](../meta-dat-display/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Privacy and publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Web App preflight receipt runner](scripts/run_webapp_preflight.py)
 
 ## Sources
 

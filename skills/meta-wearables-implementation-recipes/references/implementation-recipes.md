@@ -74,7 +74,7 @@ Use `IOS-CORE-001`, `IOS-REG-001`, `IOS-PERM-001`, `IOS-DEVICE-001`,
 contract consolidates camera ownership under `DeviceSession.addCamera(config:)`;
 the returned `Camera` owns `Camera.stream` and is stopped before the session.
 
-The [source-aligned iOS camera starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-camera-starter/MetaWearablesCameraStarter.swift)
+The [source-aligned iOS camera starter](../assets/meta-wearables-ios-camera-starter/MetaWearablesCameraStarter.swift)
 is a compile-tested DAT 0.9.0 seed against the selected target's simulator
 `MWDATCore`/`MWDATCamera` frameworks. It keeps raw frames inside the adapter,
 exposes first-frame/photo events, and sends photo bytes only through an explicit
@@ -129,14 +129,14 @@ failure must all stop the camera and return to the phone route.
 ## MockDevice fixtures
 
 Use `IOS-MOCK-001`, `AND-MOCK-001`, `ODC-MOCK-01`, and `ARCH-MOCK-01` for
-deterministic fixture work. The [iOS MockDevice starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-starter/MetaWearablesMockDeviceStarter.swift)
+deterministic fixture work. The [iOS MockDevice starter](../assets/meta-wearables-ios-mockdevice-starter/MetaWearablesMockDeviceStarter.swift)
 is type-checked against the selected DAT 0.9.0 `MWDATCore` and
 `MWDATMockDevice` simulator frameworks. It centralizes enable/configure,
 `.rayBanMeta` pairing, power/fold/don/doff lifecycle, camera permission status
 and request results, file or phone-camera feeds, captured images, and captouch
 triggers.
 
-The [Android MockDevice starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-mockdevice-starter/MetaWearablesAndroidMockDeviceStarter.kt)
+The [Android MockDevice starter](../assets/meta-wearables-android-mockdevice-starter/MetaWearablesAndroidMockDeviceStarter.kt)
 follows the official DAT 0.9.0 `MockDeviceKit`/`MockGlasses` sample with
 `DatResult.fold` pairing, lifecycle controls, `Permission` outcomes, URI or
 phone-camera feeds, captured images, and `captouch` actions. It remains
@@ -145,7 +145,7 @@ platforms, configure the mock in test setup, run adapter/reducer assertions,
 stop app-owned capability/session children, and unpair/disable in teardown.
 
 When UI tests need to control a mock server from a separate process, use the
-[iOS MockDevice test-client starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-test-client-starter/MetaWearablesMockDeviceTestClientStarter.swift).
+[iOS MockDevice test-client starter](../assets/meta-wearables-ios-mockdevice-test-client-starter/MetaWearablesMockDeviceTestClientStarter.swift).
 The app process owns `MockDeviceKitInterface.startTestServer(portFilePath:)`;
 the UI-test process owns `MockDeviceTestClient(portFilePath:)`, waits for the
 server, pairs by the explicit `.rayBanMeta` device type, drives sanitized
@@ -165,7 +165,7 @@ Use `IOS-DEVICE-001`, `IOS-SESSION-001`, `IOS-DISPLAY-001`, `IOS-DEVICE-OPS-001`
 and `GEN-PHYSICAL-01`. Gate on the runtime `supportsDisplay()` predicate, not
 on “Gen 2”, “Gen 3”, or a consumer product name.
 
-The [native iOS Display starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-display-starter/MetaWearablesDisplayStarter.swift)
+The [native iOS Display starter](../assets/meta-wearables-ios-display-starter/MetaWearablesDisplayStarter.swift)
 is a compile-tested DAT 0.9.0 seed against the pinned iOS XCFrameworks. It
 keeps the product boundary typed, uses `DeviceSession` state/error streams,
 attaches a `Display` with `session.addDisplay()`, sends a complete `FlexBox`,
@@ -243,7 +243,7 @@ Use `AND-CORE-001`, `AND-DEVICE-001`, `AND-SESSION-001`, `AND-CAMERA-001`,
 contract uses `DeviceSession.addCamera(streamConfiguration)`, `Camera.stream`,
 `Camera.stop()`, and `removeCamera()`; direct `addStream()` is removed.
 
-The [source-aligned Android camera starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-camera-starter/MetaWearablesAndroidCameraStarter.kt)
+The [source-aligned Android camera starter](../assets/meta-wearables-android-camera-starter/MetaWearablesAndroidCameraStarter.kt)
 follows the official 0.9.0 `CameraAccess` shape: `DatResult` permission and
 camera operations, `Flow` session/stream collectors, `Camera.stream`, photo
 capture, raw-frame containment, and camera-before-session teardown. It remains
@@ -295,7 +295,7 @@ glasses microphone claim.
 ## Android native Display
 
 Use `AND-SESSION-001`, `AND-DISPLAY-001`, `AND-DEVICE-001`, and `AND-PHYS-01`.
-The [native Android Display starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-display-starter/MetaWearablesAndroidDisplayStarter.kt)
+The [native Android Display starter](../assets/meta-wearables-android-display-starter/MetaWearablesAndroidDisplayStarter.kt)
 is source-aligned to the official Android 0.9.0 DisplayAccess sample. It keeps
 registration, permission, device-picker, and Android UI policy in the target
 app, while the reusable coordinator owns the selected session, `Flow`
@@ -341,7 +341,7 @@ accept input.
 ## Android DAT target starter
 
 When the selected Android route has no Gradle target, begin with the
-[credential-safe Android target starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-target-starter/README.md).
+[credential-safe Android target starter](../assets/meta-wearables-android-target-starter/README.md).
 It is deliberately smaller than the official DisplayAccess sample: the target
 owns Android permission requests, `Wearables.initialize(context)`, manifest
 metadata, the GitHub Packages repository, and a visible phone bootstrap state;
@@ -400,7 +400,7 @@ offline/cache, back/escape, extended gestures, motion/orientation, and
 geolocation independently because the public full reference and toolkit have
 source conflicts. Never put private tokens in browser code or query strings.
 
-The portable [Web App starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-web-starter) is a
+The portable [Web App starter](../assets/meta-wearables-web-starter) is a
 dependency-free 600×600 HTML shell plus a pure reducer for focus, stale input,
 network/timeout/error handling, host exit, and phone fallback. Run its tests
 from the implementation-recipes package directory:
@@ -467,5 +467,5 @@ refresh_trigger: <release/API/toolkit/device/access change>
 - [DAT Android API reference](https://wearables.developer.meta.com/docs/reference/android/dat/latest)
 - [Meta Wearables Web Apps toolkit](https://github.com/facebook/meta-wearables-webapp)
 - [Full Wearables platform reference](https://wearables.developer.meta.com/llms.txt?full=true)
-- [Portable API manifest](../../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
-- [Vertical-slice playbooks](../../../.agent/skills/meta-wearables-app-architecture/references/vertical-slice-playbooks.md)
+- [Portable API manifest](../../meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
+- [Vertical-slice playbooks](../../meta-wearables-app-architecture/references/vertical-slice-playbooks.md)

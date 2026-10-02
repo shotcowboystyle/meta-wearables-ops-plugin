@@ -15,7 +15,7 @@ into a cross-platform native DAT promise.
 
 ## Read before acting
 
-- Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) and the [input/sensor contract](../../.agent/skills/meta-wearables-input-sensors/references/input-sensor-contract.md).
+- Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) and the [input/sensor contract](references/input-sensor-contract.md).
 - Read [Display Access](../../knowledge-base/70-meta-wearables/04-display-access-and-glasses-ui.md) for native DAT Display capability, compact UI, ButtonGroup/action callbacks, and teardown.
 - Read [Web Apps display and input](../../knowledge-base/70-meta-wearables/06-web-apps-display-and-input.md) and the official [Web App Display guidelines](https://github.com/facebook/meta-wearables-webapp/blob/main/plugins/meta-wearables-webapp/references/display-guidelines.md) for the 600x600 focus/D-pad/EMG surface.
 - Read [device models and capability matrix](../../knowledge-base/70-meta-wearables/05-device-models-and-capability-matrix.md) and [device-generation/runtime support](../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md) before using Gen 2, Display, or Gen 3 language.
@@ -126,14 +126,14 @@ Route each signal by source and host first: native Display, Web App, glasses sen
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [DAT Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Transport and reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [DAT Display](../meta-dat-display/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Transport and reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
 
 ## Sources
 

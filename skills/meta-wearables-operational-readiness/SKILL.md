@@ -16,7 +16,7 @@ explicit before diagnosing a failure or calling a route ready.
 
 - Read the [operational readiness and recovery route](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md), [device/release evidence packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md), [full-SDK matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md), [generation matrix](../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md), and [on-device contract](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md).
 - Read the [version-dependency and device-compatibility route](../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md) for exact firmware/companion/artifact tuples, access-gated dependency values, community-signal classification, and `COMP-*` evidence.
-- Read the [portable recovery contract](../../.agent/skills/meta-wearables-operational-readiness/references/recovery-contract.md) before collecting a run packet or writing a recovery recommendation.
+- Read the [portable recovery contract](references/recovery-contract.md) before collecting a run packet or writing a recovery recommendation.
 - Read [transport, audio, and runtime reliability](../../knowledge-base/70-meta-wearables/22-transport-audio-and-runtime-reliability.md) when the failure involves Bluetooth, Wi-Fi/local network, HFP/A2DP, queue pressure, route changes, thermal/power, or sustained streaming.
 - Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) when readiness or recovery affects Display input, D-pad/EMG/temple gestures, browser sensors, permissions, or sensor watches.
 - Read [debugging, observability, and diagnostic evidence](../../knowledge-base/70-meta-wearables/23-debugging-observability-and-diagnostic-evidence.md) when a DAT readiness, registration, permission, device-path, session, stream, or recovery failure needs app-visible diagnosis.
@@ -68,18 +68,18 @@ Use this first-failure order: identity/access -> companion/firmware tuple -> mod
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Full-SDK audit](../../.agent/skills/meta-wearables-full-sdk-audit/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Privacy and publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [Source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Developer Center operations](../../.agent/skills/meta-wearables-developer-operations/SKILL.md)
-- [Transport and runtime reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [Security and attestation](../../.agent/skills/meta-wearables-security-attestation/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Full-SDK audit](../meta-wearables-full-sdk-audit/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Privacy and publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [Source refresh](../meta-wearables-source-refresh/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Developer Center operations](../meta-wearables-developer-operations/SKILL.md)
+- [Transport and runtime reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [Security and attestation](../meta-wearables-security-attestation/SKILL.md)
 
 ## Sources
 

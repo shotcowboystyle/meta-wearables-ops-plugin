@@ -15,13 +15,13 @@ symbol exists.
 ## Read before acting
 
 - Read [the Android API surface route](../../knowledge-base/70-meta-wearables/20-dat-android-api-surface-atlas.md), [Android parity and boundaries](../../knowledge-base/70-meta-wearables/14-dat-android-parity-and-boundaries.md), [the full capability/conflict matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md), and [the source-pinned surface manifest](../../knowledge-base/70-meta-wearables/27-source-pinned-surface-manifest.md).
-- Load the Android `api_surface.rows` from the portable [source-pinned manifest](../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
+- Load the Android `api_surface.rows` from the portable [source-pinned manifest](../meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
   for normalized artifact/symbol/status/gate/fallback rows; use the resolved
   Maven artifact and generated API to resolve any signature conflict.
 - Read [the application architecture contract](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md) when Android behavior is shared with iOS, native Display, Web Apps, or phone fallback.
-- Read [on-device compliance](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md), [operational readiness](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md), and [device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md) when the request makes processing, firmware, thermal, hardware, or release claims.
+- Read [on-device compliance](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md), [operational readiness](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md), and [device proof](../meta-wearables-device-proof/SKILL.md) when the request makes processing, firmware, thermal, hardware, or release claims.
 - Refresh the official [DAT Android repository](https://github.com/facebook/meta-wearables-dat-android), [Android `AGENTS.md`](https://github.com/facebook/meta-wearables-dat-android/blob/main/AGENTS.md), [0.9.0 changelog](https://github.com/facebook/meta-wearables-dat-android/blob/main/CHANGELOG.md), [Android API reference](https://wearables.developer.meta.com/docs/reference/android/dat/latest), [DAT-filtered full reference](https://wearables.developer.meta.com/llms.txt?full=true&product=dat), and [Wearables MCP](https://mcp.developer.meta.com/wearables).
-- Read [the Android surface contract](../../.agent/skills/meta-dat-android-api-atlas/references/android-surface-contract.md) for the required audit fields and fixture.
+- Read [the Android surface contract](references/android-surface-contract.md) for the required audit fields and fixture.
 
 ## Authority order
 
@@ -125,16 +125,16 @@ For one requested capability, filter the manifest to platform, artifact, and sta
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [iOS API atlas](../../.agent/skills/meta-dat-api-atlas/SKILL.md)
-- [Full-SDK audit](../../.agent/skills/meta-wearables-full-sdk-audit/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Camera/audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [Native Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Android integration](../meta-dat-android-integration/SKILL.md)
+- [iOS API atlas](../meta-dat-api-atlas/SKILL.md)
+- [Full-SDK audit](../meta-wearables-full-sdk-audit/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Camera/audio](../meta-dat-camera-audio/SKILL.md)
+- [Native Display](../meta-dat-display/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Source refresh](../meta-wearables-source-refresh/SKILL.md)
 
 ## Sources
 

@@ -78,18 +78,18 @@ Return:
 
 ## Related roles
 
-- [Full-SDK audit](../../.agent/skills/meta-wearables-full-sdk-audit/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Camera/audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [Transport/reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Native Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Privacy/publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Security and attestation](../../.agent/skills/meta-wearables-security-attestation/SKILL.md)
+- [Full-SDK audit](../meta-wearables-full-sdk-audit/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Camera/audio](../meta-dat-camera-audio/SKILL.md)
+- [Transport/reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Native Display](../meta-dat-display/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Privacy/publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Security and attestation](../meta-wearables-security-attestation/SKILL.md)
 
 ## Sources
 

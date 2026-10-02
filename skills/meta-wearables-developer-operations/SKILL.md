@@ -19,7 +19,7 @@ an external Developer Center account.
 - Read the [version-dependency and device-compatibility route](../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md) when project/version/channel work includes firmware, companion/DAT-app versions, support tables, or a Gen 2/Gen 3 compatibility claim.
 - Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md) when project identity, callbacks, Developer Mode, release attestation, package/signing credentials, or App Store/privacy-manifest review is involved.
 - Refresh the official [DAT-filtered full reference](https://wearables.developer.meta.com/llms.txt?full=true&product=dat), [Wearables Developer Center](https://wearables.developer.meta.com/docs/develop/), [onboarding and organization guide](https://wearables.developer.meta.com/docs/onboarding-and-organization-management), [manage projects](https://wearables.developer.meta.com/docs/manage-projects), [release channels](https://wearables.developer.meta.com/docs/set-up-release-channels), and [DAT iOS/Android repositories](https://github.com/facebook/meta-wearables-dat-ios), [Android repository](https://github.com/facebook/meta-wearables-dat-android).
-- Read [the operations contract](../../.agent/skills/meta-wearables-developer-operations/references/developer-operations-contract.md) before producing an account, channel, tester, telemetry, or recovery packet.
+- Read [the operations contract](references/developer-operations-contract.md) before producing an account, channel, tester, telemetry, or recovery packet.
 
 ## Authority and action boundary
 
@@ -119,16 +119,16 @@ Classify the requested action as read-only, reversible configuration, or release
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Android API atlas](../../.agent/skills/meta-dat-android-api-atlas/SKILL.md)
-- [Privacy and publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
-- [Security and attestation](../../.agent/skills/meta-wearables-security-attestation/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Route planner](../meta-wearables-route-planner/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Android API atlas](../meta-dat-android-api-atlas/SKILL.md)
+- [Privacy and publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Source refresh](../meta-wearables-source-refresh/SKILL.md)
+- [Security and attestation](../meta-wearables-security-attestation/SKILL.md)
 
 ## Sources
 

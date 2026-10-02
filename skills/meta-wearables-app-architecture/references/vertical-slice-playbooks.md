@@ -1,6 +1,6 @@
 # Meta Wearables vertical-slice playbooks
 
-Use these playbooks after the [source-pinned API register](../../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
+Use these playbooks after the [source-pinned API register](../../meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
 has been filtered for the selected journey. They turn the team’s route and
 evidence contracts into implementation-ready handoffs without pretending that
 source rows compile or that a simulator proves glasses behavior.
@@ -252,7 +252,7 @@ works` unless the packet contains the evidence required by that claim.
 ## Sources
 
 - [Meta Wearables application architecture route](../../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md)
-- [Source-pinned API surface manifest](../../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
+- [Source-pinned API surface manifest](../../meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
 - [Device and release evidence packet](../../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md)
 - [On-device compliance and runtime contract](../../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md)
 - [DAT iOS changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md)

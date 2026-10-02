@@ -23,8 +23,8 @@ the selected package.
   [the DAT Android parity route](../../knowledge-base/70-meta-wearables/14-dat-android-parity-and-boundaries.md),
   [the full SDK capability/conflict matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md),
   [the source-pinned surface manifest](../../knowledge-base/70-meta-wearables/27-source-pinned-surface-manifest.md),
-  and [the surface fixture](../../.agent/skills/meta-dat-api-atlas/references/surface-map.md).
-- Load the iOS `api_surface.rows` from the portable [source-pinned manifest](../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
+  and [the surface fixture](references/surface-map.md).
+- Load the iOS `api_surface.rows` from the portable [source-pinned manifest](../meta-wearables-full-sdk-audit/references/surface-manifest.yaml)
   for normalized symbol/status/gate/fallback rows; use the pinned package and
   generated API to resolve any signature conflict.
 - Refresh the official [DAT iOS repository](https://github.com/facebook/meta-wearables-dat-ios),
@@ -85,15 +85,15 @@ Answer an exact-symbol request with one normalized row: source revision, package
 
 ## Related routes
 
-- [Meta Wearables agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Full SDK audit](../../.agent/skills/meta-wearables-full-sdk-audit/SKILL.md)
-- [DAT camera and audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [DAT Display](../../.agent/skills/meta-dat-display/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Meta source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
+- [Meta Wearables agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Full SDK audit](../meta-wearables-full-sdk-audit/SKILL.md)
+- [DAT camera and audio](../meta-dat-camera-audio/SKILL.md)
+- [DAT Display](../meta-dat-display/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Meta source refresh](../meta-wearables-source-refresh/SKILL.md)
 
 ## Sources
 

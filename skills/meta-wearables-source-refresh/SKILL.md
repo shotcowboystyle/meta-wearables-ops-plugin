@@ -99,14 +99,14 @@ At minimum, track:
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Transport and runtime reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Route planner](../meta-wearables-route-planner/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Transport and runtime reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
 - [Apple source refresh](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-source-refresh-and-availability/SKILL.md)
 
 ## Sources
@@ -114,7 +114,7 @@ At minimum, track:
 - [Meta DAT iOS repository](https://github.com/facebook/meta-wearables-dat-ios)
 - [Meta DAT Android repository](https://github.com/facebook/meta-wearables-dat-android)
 - [DAT Android API surface atlas](../../knowledge-base/70-meta-wearables/20-dat-android-api-surface-atlas.md)
-- [Developer Center operations](../../.agent/skills/meta-wearables-developer-operations/SKILL.md)
+- [Developer Center operations](../meta-wearables-developer-operations/SKILL.md)
 - [Meta DAT iOS changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md)
 - [Meta Wearables Web App repository](https://github.com/facebook/meta-wearables-webapp)
 - [Wearables Developer Center](https://wearables.developer.meta.com/docs/develop/)

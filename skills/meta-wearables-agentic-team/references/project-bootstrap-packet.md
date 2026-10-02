@@ -93,7 +93,7 @@ Prefer separate adapters over a cross-platform SDK-shaped abstraction:
 ```
 
 For an Android-first bootstrap, the implementation-recipes package includes a
-[credential-safe DAT target starter](../../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-target-starter/README.md).
+[credential-safe DAT target starter](../../meta-wearables-implementation-recipes/assets/meta-wearables-android-target-starter/README.md).
 Copy it into the new sibling's `android/` folder, replace the example
 namespace/application ID, and keep `local.properties`, Developer Center
 values, GitHub Packages access, signing, and device identifiers outside the

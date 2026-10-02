@@ -64,16 +64,16 @@ Trace one data path from permission and consent through collection, processing, 
 
 ## Related routes
 
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [Camera and audio](../../.agent/skills/meta-dat-camera-audio/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Developer Center operations](../../.agent/skills/meta-wearables-developer-operations/SKILL.md)
-- [Security and attestation](../../.agent/skills/meta-wearables-security-attestation/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [Camera and audio](../meta-dat-camera-audio/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Developer Center operations](../meta-wearables-developer-operations/SKILL.md)
+- [Security and attestation](../meta-wearables-security-attestation/SKILL.md)
 - [iOS privacy/performance/release proof](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-privacy-performance-release-proof/SKILL.md)
 - [iOS privacy, performance, and release proof](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-privacy-performance-release-proof/SKILL.md)
 

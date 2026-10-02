@@ -20,7 +20,7 @@ Design the glasses surface as a small, stateful system surface. The phone remain
 - Read the [operational readiness and recovery route](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md) for firmware, companion, on-glasses DAT-app provisioning, Display update-required errors, release-channel, thermal, and recovery behavior.
 - Read the [application architecture and platform-boundaries route](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md) before sharing Display state with SwiftUI, Android, or a Web App.
 - Refresh the official [DAT iOS Display skill](https://github.com/facebook/meta-wearables-dat-ios/tree/main/plugins/mwdat-ios/skills/display-access), [DAT iOS changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md), and current [Display documentation](https://wearables.developer.meta.com/docs/develop/).
-- Keep this route separate from [Meta Wearables Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md); native DAT Display and a 600×600 Web App have different APIs and proof.
+- Keep this route separate from [Meta Wearables Web Apps](../meta-wearables-web-apps/SKILL.md); native DAT Display and a 600×600 Web App have different APIs and proof.
 
 ## Display workflow
 
@@ -62,14 +62,14 @@ Start with a capability gate, one compact Display state, one input event, and te
 
 ## Related routes
 
-- [Meta route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [On-device compliance](../../.agent/skills/meta-wearables-on-device-compliance/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
+- [Meta route planner](../meta-wearables-route-planner/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [On-device compliance](../meta-wearables-on-device-compliance/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
 - [SwiftUI native design](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/swiftui-native-design/SKILL.md)
 
 ## Sources

@@ -19,9 +19,9 @@ Gradle target.
   ProGuard/R8 rules, privacy disclosures, and existing adapters.
 - Read [DAT Android parity and boundaries](../../knowledge-base/70-meta-wearables/14-dat-android-parity-and-boundaries.md), the [public plugin matrix](../../knowledge-base/70-meta-wearables/13-public-plugin-and-skill-matrix.md), and the [full SDK capability/conflict matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md).
 - Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md) when manifest identity, callback schemes, GitHub Packages credentials, Developer Mode/release attestation, signing, or Play/privacy review is in scope.
-- Read the [DAT Android API surface atlas](../../knowledge-base/70-meta-wearables/20-dat-android-api-surface-atlas.md) and its [surface contract](../../.agent/skills/meta-dat-android-api-atlas/references/android-surface-contract.md) before making exact symbol or 0.9 migration claims.
+- Read the [DAT Android API surface atlas](../../knowledge-base/70-meta-wearables/20-dat-android-api-surface-atlas.md) and its [surface contract](../meta-dat-android-api-atlas/references/android-surface-contract.md) before making exact symbol or 0.9 migration claims.
 - Refresh the official [DAT Android repository](https://github.com/facebook/meta-wearables-dat-android), [AGENTS.md](https://github.com/facebook/meta-wearables-dat-android/blob/main/AGENTS.md), [0.9.0 changelog](https://github.com/facebook/meta-wearables-dat-android/blob/main/CHANGELOG.md), [Android API reference](https://wearables.developer.meta.com/docs/reference/android/dat/latest), and [Wearables MCP](https://mcp.developer.meta.com/wearables).
-- Read the portable [Android migration fixture](../../.agent/skills/meta-dat-android-integration/references/android-api-migration.md) when reviewing a version-sensitive change.
+- Read the portable [Android migration fixture](references/android-api-migration.md) when reviewing a version-sensitive change.
 - Use the official [0.9.0 DisplayAccess sample](https://github.com/facebook/meta-wearables-dat-android/tree/main/samples/DisplayAccess) and its [DisplayViewModel](https://github.com/facebook/meta-wearables-dat-android/blob/main/samples/DisplayAccess/app/src/main/java/com/meta/wearable/dat/externalsampleapps/displayaccess/display/DisplayViewModel.kt) as the current source anchor for `DeviceSession`/Display shapes; older upstream `AGENTS.md`/plugin examples that say `Session` remain a compile-time source conflict.
 - Read the [operational readiness and recovery route](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md) when registration, firmware, companion, on-glasses DAT-app provisioning, Developer Mode, release-channel, thermal, or recovery behavior is in scope.
 - Read the [debugging and observability route](../../knowledge-base/70-meta-wearables/23-debugging-observability-and-diagnostic-evidence.md) when Android readiness, registration, permission, device-path, `DatResult`, session, stream, or companion-boundary diagnosis is in scope.
@@ -30,8 +30,8 @@ Gradle target.
 - Treat GitHub Packages credentials as opaque. Pass them through the approved
   environment/local-properties path; never print, commit, or place them in a
   fixture or archive.
-- For camera/photo implementation, begin with the [source-aligned Android camera starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-camera-starter/MetaWearablesAndroidCameraStarter.kt) after resolving the selected Maven artifacts and target configuration.
-- For deterministic fixture work, begin with the [source-aligned Android MockDevice starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-android-mockdevice-starter/MetaWearablesAndroidMockDeviceStarter.kt) after resolving `mwdat-mockdevice`; keep instrumentation/mock evidence separate from connected and physical-device evidence.
+- For camera/photo implementation, begin with the [source-aligned Android camera starter](../meta-wearables-implementation-recipes/assets/meta-wearables-android-camera-starter/MetaWearablesAndroidCameraStarter.kt) after resolving the selected Maven artifacts and target configuration.
+- For deterministic fixture work, begin with the [source-aligned Android MockDevice starter](../meta-wearables-implementation-recipes/assets/meta-wearables-android-mockdevice-starter/MetaWearablesAndroidMockDeviceStarter.kt) after resolving `mwdat-mockdevice`; keep instrumentation/mock evidence separate from connected and physical-device evidence.
 
 ## Integration workflow
 
@@ -97,16 +97,16 @@ Make the Android compile path explicit: resolve one artifact set -> initialize -
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT API atlas](../../.agent/skills/meta-dat-api-atlas/SKILL.md)
-- [DAT Android API atlas](../../.agent/skills/meta-dat-android-api-atlas/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Privacy and publishing](../../.agent/skills/meta-wearables-privacy-publishing/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT API atlas](../meta-dat-api-atlas/SKILL.md)
+- [DAT Android API atlas](../meta-dat-android-api-atlas/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Privacy and publishing](../meta-wearables-privacy-publishing/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Source refresh](../meta-wearables-source-refresh/SKILL.md)
 
 ## Sources
 

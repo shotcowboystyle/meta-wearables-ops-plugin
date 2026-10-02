@@ -18,11 +18,11 @@ consumer feature, stale upstream example, or unsupported device claim.
 - Read [the full capability and source-conflict matrix](../../knowledge-base/70-meta-wearables/15-full-sdk-capability-and-source-conflict-matrix.md), [the device-generation and runtime-support matrix](../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md), [the iOS API atlas](../../knowledge-base/70-meta-wearables/10-dat-ios-api-surface-atlas.md), [the Android API atlas](../../knowledge-base/70-meta-wearables/20-dat-android-api-surface-atlas.md), [the plugin matrix](../../knowledge-base/70-meta-wearables/13-public-plugin-and-skill-matrix.md), and [the Android parity route](../../knowledge-base/70-meta-wearables/14-dat-android-parity-and-boundaries.md).
 - Read [input, sensors, and physical interaction](../../knowledge-base/70-meta-wearables/24-input-sensors-and-physical-interaction.md) before treating IMU, EMG, temple, browser sensor, or Display input wording as a complete capability.
 - Read the [version-dependency and device-compatibility route](../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md) before treating Gen 2/Gen 3, firmware, companion versions, or support-table values as resolved.
-- Load the portable [source-pinned surface manifest](../../.agent/skills/meta-wearables-full-sdk-audit/references/surface-manifest.yaml) before a full-SDK/parity audit; use it as a routing snapshot, never as generated API or hardware proof.
-- Load the portable [Meta team manifest](../../.agent/skills/meta-wearables-agentic-team/references/team-manifest.yaml) and run `python3 ../meta-wearables-agentic-team/scripts/validate_team_manifest.py` in the workspace; use it to prove that selected upstream roles have local owners and device-claim gates.
+- Load the portable [source-pinned surface manifest](references/surface-manifest.yaml) before a full-SDK/parity audit; use it as a routing snapshot, never as generated API or hardware proof.
+- Load the portable [Meta team manifest](../meta-wearables-agentic-team/references/team-manifest.yaml) and run `python3 ../meta-wearables-agentic-team/scripts/validate_team_manifest.py` in the workspace; use it to prove that selected upstream roles have local owners and device-claim gates.
 - Resolve user wording through the manifest `terminology_contract` before routing; “regular SDK” is an ambiguous phrase, “full SDK” is a composite audit, and “Gen 3” remains an unresolved alias until official and named-device evidence close it.
-- Load its `preflight_contract`, read the [target-preflight packet](../../.agent/skills/meta-wearables-device-proof/references/target-preflight.md), and select the relevant `PRE-*` tasks before build, connected, physical, signed, or release-channel work; preflight freezes facts but does not upgrade evidence.
-- Load the portable [capability/evidence plan](../../.agent/skills/meta-wearables-full-sdk-audit/references/capability-evidence-plan.yaml) and run `python3 scripts/validate_capability_evidence_plan.py`; use it to carry owner roles, implementation route, privacy path, fallback, minimum evidence levels, and proof task IDs for every selected capability.
+- Load its `preflight_contract`, read the [target-preflight packet](../meta-wearables-device-proof/references/target-preflight.md), and select the relevant `PRE-*` tasks before build, connected, physical, signed, or release-channel work; preflight freezes facts but does not upgrade evidence.
+- Load the portable [capability/evidence plan](references/capability-evidence-plan.yaml) and run `python3 scripts/validate_capability_evidence_plan.py`; use it to carry owner roles, implementation route, privacy path, fallback, minimum evidence levels, and proof task IDs for every selected capability.
 - Filter `api_surface.rows` by the selected journey/platform and carry each row's source anchors, status, compile/runtime gate, privacy path, fallback, and migration note into the audit; these rows remain source routing, not generated-API or physical proof.
 - Run `python3 scripts/validate_surface_manifest.py` after any manifest edit and before packaging; treat count, exact upstream plugin-role list, source-anchor, required-field, duplicate-ID, and secret-scan failures as refresh blockers.
 - Run `python3 scripts/validate_capability_evidence_plan.py` after any capability/evidence-plan edit and before packaging; treat capability-ID, surface, preflight-task, evidence-task, level, duplicate, and secret-scan drift as blockers.
@@ -34,7 +34,7 @@ consumer feature, stale upstream example, or unsupported device claim.
 - Read [transport, audio, and runtime reliability](../../knowledge-base/70-meta-wearables/22-transport-audio-and-runtime-reliability.md) when the request includes Wi-Fi/local network, Bluetooth/link behavior, HFP/A2DP, backpressure, latency, thermal/power, disconnect, or recovery.
 - Read [debugging, observability, and diagnostic evidence](../../knowledge-base/70-meta-wearables/23-debugging-observability-and-diagnostic-evidence.md) when the request includes a DAT failure, live DAT Inspector/MCP, readiness, event/error diagnosis, or a diagnostic handoff.
 - Refresh the official [DAT iOS repository](https://github.com/facebook/meta-wearables-dat-ios), [iOS changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md), [DAT Android repository](https://github.com/facebook/meta-wearables-dat-android), [Android changelog](https://github.com/facebook/meta-wearables-dat-android/blob/main/CHANGELOG.md), [Web Apps toolkit](https://github.com/facebook/meta-wearables-webapp), [full platform reference](https://wearables.developer.meta.com/llms.txt?full=true), and [Wearables MCP](https://mcp.developer.meta.com/wearables).
-- Read [the capability audit fixture](../../.agent/skills/meta-wearables-full-sdk-audit/references/capability-audit-fixture.md) when evaluating a “full SDK” or parity brief.
+- Read [the capability audit fixture](references/capability-audit-fixture.md) when evaluating a “full SDK” or parity brief.
 
 ## Audit workflow
 
@@ -143,21 +143,21 @@ Filter the request into platform, surface, and capability rows, run the terminol
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [DAT API atlas](../../.agent/skills/meta-dat-api-atlas/SKILL.md)
-- [DAT Android API atlas](../../.agent/skills/meta-dat-android-api-atlas/SKILL.md)
-- [Developer Center operations](../../.agent/skills/meta-wearables-developer-operations/SKILL.md)
-- [Transport and runtime reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [DAT Android integration](../../.agent/skills/meta-dat-android-integration/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
-- [Device proof](../../.agent/skills/meta-wearables-device-proof/SKILL.md)
-- [Device compatibility](../../.agent/skills/meta-wearables-device-compatibility/SKILL.md)
-- [Operational readiness](../../.agent/skills/meta-wearables-operational-readiness/SKILL.md)
-- [Application architecture](../../.agent/skills/meta-wearables-app-architecture/SKILL.md)
-- [Source refresh](../../.agent/skills/meta-wearables-source-refresh/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [DAT API atlas](../meta-dat-api-atlas/SKILL.md)
+- [DAT Android API atlas](../meta-dat-android-api-atlas/SKILL.md)
+- [Developer Center operations](../meta-wearables-developer-operations/SKILL.md)
+- [Transport and runtime reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [DAT Android integration](../meta-dat-android-integration/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
+- [Device proof](../meta-wearables-device-proof/SKILL.md)
+- [Device compatibility](../meta-wearables-device-compatibility/SKILL.md)
+- [Operational readiness](../meta-wearables-operational-readiness/SKILL.md)
+- [Application architecture](../meta-wearables-app-architecture/SKILL.md)
+- [Source refresh](../meta-wearables-source-refresh/SKILL.md)
 
 ## Sources
 
@@ -165,7 +165,7 @@ Filter the request into platform, surface, and capability rows, run the terminol
 - [Device-generation and runtime-support matrix](../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md)
 - [Version-dependency and device-compatibility evidence](../../knowledge-base/70-meta-wearables/26-version-dependency-and-device-compatibility-evidence.md)
 - [Source-pinned surface manifest route](../../knowledge-base/70-meta-wearables/27-source-pinned-surface-manifest.md)
-- [Capability/evidence plan](../../.agent/skills/meta-wearables-full-sdk-audit/references/capability-evidence-plan.yaml)
+- [Capability/evidence plan](references/capability-evidence-plan.yaml)
 - [DAT iOS repository](https://github.com/facebook/meta-wearables-dat-ios)
 - [DAT iOS AGENTS.md](https://github.com/facebook/meta-wearables-dat-ios/blob/main/AGENTS.md)
 - [DAT Android repository](https://github.com/facebook/meta-wearables-dat-android)

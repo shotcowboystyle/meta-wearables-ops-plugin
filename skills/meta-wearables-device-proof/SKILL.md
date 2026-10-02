@@ -22,13 +22,13 @@ Keep simulated, connected, and physical observations separate. The purpose of th
 - Read [transport, audio, and runtime reliability](../../knowledge-base/70-meta-wearables/22-transport-audio-and-runtime-reliability.md) when the script includes Bluetooth/Wi-Fi, HFP/A2DP, sustained streaming, route changes, thermal/power, or link recovery.
 - Read [debugging, observability, and diagnostic evidence](../../knowledge-base/70-meta-wearables/23-debugging-observability-and-diagnostic-evidence.md) for app-visible DAT readiness, first-failure, event-digest, and redacted diagnostic evidence.
 - Read the [security, attestation, and credential-boundaries route](../../knowledge-base/70-meta-wearables/25-security-attestation-and-credential-boundaries.md) when a proof run depends on callback identity, Developer Mode/release attestation, signed artifacts, tester/channel access, or redacted credentials.
-- Run the bundled [target-surface inspector](../../.agent/skills/meta-wearables-device-proof/scripts/inspect_target_surfaces.py) against the actual target workspace before loading the target-preflight reference. If the knowledge base is a separate sibling, pass that app root to the inspector and to the team runner’s `--target-root`. `TARGETS_PRESENT` permits target-specific preflight; `TARGETS_PARTIAL` and `NO_TARGET` require the project bootstrap packet.
-- When an iOS `TARGETS_PRESENT` target exists, run the bundled [redacted iOS target receipt runner](../../.agent/skills/meta-wearables-device-proof/scripts/run_ios_target_preflight.py) with an explicit project/workspace, scheme, configuration, and destination. Use `--test` only for an intentional build/test observation; its JSON receipt contains safe settings and package-lock facts, never raw xcodebuild output or credential values.
-- When an Android `TARGETS_PRESENT` target exists, run the bundled [redacted Android target receipt runner](../../.agent/skills/meta-wearables-device-proof/scripts/run_android_target_preflight.py) with the actual Gradle root, module, variant, and route. It inventories the target-owned build graph, DAT coordinates, manifest keys, source migration markers, toolchain signals, and credential presence without printing values or resolving/publishing dependencies. A static pass is not an Android compile or device result.
-- When iOS UI tests need cross-process MockDevice control, use the [source-aligned MockDevice test-client starter](../../.agent/skills/meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-test-client-starter/MetaWearablesMockDeviceTestClientStarter.swift) and record the app-process test-server setup, UI-test client, sanitized state/actions, and teardown separately. `MWDATMockDeviceTestClient` is test-only evidence and never a physical-device result.
-- Use the [workspace device and release evidence packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md) for the full route matrix, and read the portable [execution reference](../../.agent/skills/meta-wearables-device-proof/references/execution-packet.md) when the package is used outside this workspace.
-- Load the [capability/evidence plan](../../.agent/skills/meta-wearables-full-sdk-audit/references/capability-evidence-plan.yaml) for the selected capability; carry its required evidence levels and proof task IDs into the run instead of inventing a local task list.
-- Read the portable [target-preflight reference](../../.agent/skills/meta-wearables-device-proof/references/target-preflight.md) before `BUILD-01`, `REL-01`, `PRE-*`, connected, physical, or release work; run `python3 scripts/validate_target_preflight.py` after editing it.
+- Run the bundled [target-surface inspector](scripts/inspect_target_surfaces.py) against the actual target workspace before loading the target-preflight reference. If the knowledge base is a separate sibling, pass that app root to the inspector and to the team runner’s `--target-root`. `TARGETS_PRESENT` permits target-specific preflight; `TARGETS_PARTIAL` and `NO_TARGET` require the project bootstrap packet.
+- When an iOS `TARGETS_PRESENT` target exists, run the bundled [redacted iOS target receipt runner](scripts/run_ios_target_preflight.py) with an explicit project/workspace, scheme, configuration, and destination. Use `--test` only for an intentional build/test observation; its JSON receipt contains safe settings and package-lock facts, never raw xcodebuild output or credential values.
+- When an Android `TARGETS_PRESENT` target exists, run the bundled [redacted Android target receipt runner](scripts/run_android_target_preflight.py) with the actual Gradle root, module, variant, and route. It inventories the target-owned build graph, DAT coordinates, manifest keys, source migration markers, toolchain signals, and credential presence without printing values or resolving/publishing dependencies. A static pass is not an Android compile or device result.
+- When iOS UI tests need cross-process MockDevice control, use the [source-aligned MockDevice test-client starter](../meta-wearables-implementation-recipes/assets/meta-wearables-ios-mockdevice-test-client-starter/MetaWearablesMockDeviceTestClientStarter.swift) and record the app-process test-server setup, UI-test client, sanitized state/actions, and teardown separately. `MWDATMockDeviceTestClient` is test-only evidence and never a physical-device result.
+- Use the [workspace device and release evidence packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md) for the full route matrix, and read the portable [execution reference](references/execution-packet.md) when the package is used outside this workspace.
+- Load the [capability/evidence plan](../meta-wearables-full-sdk-audit/references/capability-evidence-plan.yaml) for the selected capability; carry its required evidence levels and proof task IDs into the run instead of inventing a local task list.
+- Read the portable [target-preflight reference](references/target-preflight.md) before `BUILD-01`, `REL-01`, `PRE-*`, connected, physical, or release work; run `python3 scripts/validate_target_preflight.py` after editing it.
 - Refresh the official [DAT iOS MockDevice skill](https://github.com/facebook/meta-wearables-dat-ios/tree/main/plugins/mwdat-ios/skills/mockdevice-testing), [Mock Device Kit](https://wearables.developer.meta.com/docs/mock-device-kit), and [iOS testing guidance](https://wearables.developer.meta.com/docs/testing-mdk-ios).
 - Check the current [DAT iOS changelog](https://github.com/facebook/meta-wearables-dat-ios/blob/main/CHANGELOG.md) for mock-link and device-model behavior before relying on an older fixture.
 
@@ -100,21 +100,21 @@ claim.
 
 ## Related routes
 
-- [Meta agentic team](../../.agent/skills/meta-wearables-agentic-team/SKILL.md)
-- [Route planner](../../.agent/skills/meta-wearables-route-planner/SKILL.md)
-- [DAT iOS integration](../../.agent/skills/meta-dat-ios-integration/SKILL.md)
-- [Web Apps](../../.agent/skills/meta-wearables-web-apps/SKILL.md)
+- [Meta agentic team](../meta-wearables-agentic-team/SKILL.md)
+- [Route planner](../meta-wearables-route-planner/SKILL.md)
+- [DAT iOS integration](../meta-dat-ios-integration/SKILL.md)
+- [Web Apps](../meta-wearables-web-apps/SKILL.md)
 - [Device and release evidence packet](../../knowledge-base/70-meta-wearables/12-device-and-release-evidence-packet.md)
 - [Device-generation and runtime-support matrix](../../knowledge-base/70-meta-wearables/16-device-generation-and-runtime-support-matrix.md)
 - [On-device compliance and runtime contract](../../knowledge-base/70-meta-wearables/17-on-device-compliance-and-runtime-contract.md)
 - [Operational readiness and recovery](../../knowledge-base/70-meta-wearables/18-operational-readiness-and-recovery.md)
-- [Transport and runtime reliability](../../.agent/skills/meta-wearables-transport-reliability/SKILL.md)
-- [Debugging and observability](../../.agent/skills/meta-wearables-debugging-observability/SKILL.md)
-- [Input and sensors](../../.agent/skills/meta-wearables-input-sensors/SKILL.md)
+- [Transport and runtime reliability](../meta-wearables-transport-reliability/SKILL.md)
+- [Debugging and observability](../meta-wearables-debugging-observability/SKILL.md)
+- [Input and sensors](../meta-wearables-input-sensors/SKILL.md)
 - [Application architecture and platform boundaries](../../knowledge-base/70-meta-wearables/19-application-architecture-and-platform-boundaries.md)
-- [Target preflight reference](../../.agent/skills/meta-wearables-device-proof/references/target-preflight.md)
-- [Redacted iOS target receipt runner](../../.agent/skills/meta-wearables-device-proof/scripts/run_ios_target_preflight.py)
-- [Redacted Android target receipt runner](../../.agent/skills/meta-wearables-device-proof/scripts/run_android_target_preflight.py)
+- [Target preflight reference](references/target-preflight.md)
+- [Redacted iOS target receipt runner](scripts/run_ios_target_preflight.py)
+- [Redacted Android target receipt runner](scripts/run_android_target_preflight.py)
 - [iOS device release proof](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-device-release-proof/SKILL.md)
 - [iOS testing and release assurance](https://github.com/shotcowboystyle/ios-ops-plugin/blob/main/.agent/skills/ios-testing-and-release-assurance/SKILL.md)
 
